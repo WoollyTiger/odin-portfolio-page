@@ -9,23 +9,30 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Roboto, Calibri, 'Trebuchet MS', sans-serif;
   
 }
 
 button {
   background-color: #3882F6;
   border: 2px solid #E5E7EB;
-  padding: 10px 35px;
+  padding: 8px 35px;
   border-radius: 5px;
   font-weight: 900;
+  font-size: 1.05rem;
 
 }
 
+.hero-text button {
+  border: none;
+  margin-top: 16px;
+}
+
 nav {
-  width: 100%;
+
   display: flex;
-  justify-content: spade-between;
+  justify-content: space-between;
+  width: 830px;
 }
 
 header, .cta-container, footer, button {
@@ -33,11 +40,18 @@ header, .cta-container, footer, button {
 }
 
 header {
-  background-color: #1F2937;
+  background: rgb(31,41,55);
+  background: linear-gradient(150deg, rgba(31,41,55,1) 0%, rgba(9,9,121,1) 35%, rgba(7,56,152,1) 70%, rgba(31,146,170,1) 100%);
   padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  color: F9FAF8;
+  font-weight: 800;
 }
 
 h1 {
@@ -45,11 +59,21 @@ h1 {
   font-weight: 900;
 }
 
+h3 {
+  text-align: center;
+}
+
+main > h3 {
+  padding-top: 120px;
+  font-size: 36px;
+  color: #1f2937;
+}
+
 ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  gap: 8px;
+  gap: 16px;
 }
 
 .hero-container {
@@ -58,16 +82,21 @@ ul {
   height: 300px;
   align-items: center;
   justify-content: center;
+  width: 830px;
 }
 
 .hero-text {
   width: 400px;
+  font-size: 18px;
 }
 
 .hero-image {
-  background-color: #e5e7eb;
+  background-color: #7485a5;
   width: 400px;
   height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -77,7 +106,7 @@ ul {
   gap: 36px;
   justify-content: center;
   align-items: center;
-  padding: 36px;
+  padding: 40px 36px 120px 36px;
 }
 
 .card {
@@ -98,7 +127,7 @@ ul {
   flex-shrink: 0;
 }
 
-.quote {
+.quote-container {
   background-color: #e5e7eb;
   color: #1f2937;
   font-size: 36px;
@@ -107,9 +136,21 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
-  padding: 36px;
+  min-height: 300px;
+  padding: 120px 36px;
 
+}
+
+.quote {
+  width: 700px;
+}
+
+.quote-author {
+  margin-top: 10px;
+  display: block;
+  text-align: right;
+  font-size: 26px;
+  font-weight: 600;
 }
 
 .cta-container {
